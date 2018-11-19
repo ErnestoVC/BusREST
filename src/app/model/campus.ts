@@ -1,5 +1,6 @@
-export class Ruta {
+export class Campus {
     id:number;
     nombre:string;
+
     
 }

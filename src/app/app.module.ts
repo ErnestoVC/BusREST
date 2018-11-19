@@ -24,6 +24,12 @@ import { CreateRutaComponent } from './create-ruta/create-ruta.component';
 import { RutaDetailsComponent } from './ruta-details/ruta-details.component';
 import { RutasListComponent } from './rutas-list/rutas-list.component';
 import { SearchRutasComponent } from './search-rutas/search-rutas.component';
+import { CreateCampusComponent } from './create-campus/create-campus.component';
+import { CampusDetailsComponent } from './campus-details/campus-details.component';
+import { CampusListComponent } from './campus-list/campus-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -49,10 +55,16 @@ import { SearchRutasComponent } from './search-rutas/search-rutas.component';
     CreateRutaComponent,
     RutaDetailsComponent,
     RutasListComponent,
-    SearchRutasComponent
+    SearchRutasComponent,
+    CreateCampusComponent,
+    CampusDetailsComponent,
+    CampusListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
