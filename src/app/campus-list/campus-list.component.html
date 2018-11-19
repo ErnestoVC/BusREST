@@ -1,3 +1,5 @@
-<p>
-  campus-list works!
-</p>
+<h1>Lista de Campus</h1>
+
+<div *ngFor="let campus of campusies | async">
+  <app-campus-details [campus]='campus'></app-campus-details>
+</div>

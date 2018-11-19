@@ -1,4 +1,7 @@
+import { CampusService } from './../campus.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Campus } from '../model/campus';
 
 @Component({
   selector: 'app-campus-list',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CampusListComponent implements OnInit {
 
-  constructor() { }
+  campuses: Observable<Campus[]>
+
+  constructor(private campusService: CampusService) { }
 
   ngOnInit() {
+    this.reloadData();
+  }
+
+  reloadData(){
+    this.campuses=this.campusService.getCampusList();
   }
 
 }

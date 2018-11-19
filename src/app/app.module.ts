@@ -11,8 +11,6 @@ import { PagoDetailsComponent } from './pago-details/pago-details.component';
 import { EstudianteDetailsComponent } from './estudiante-details/estudiante-details.component';
 import { ClaseDetailsComponent } from './clase-details/clase-details.component';
 import { ClasesListComponent } from './clases-list/clases-list.component';
-import { EstudianteListComponent } from './estudiante-list/estudiante-list.component';
-import { PagoListComponent } from './pago-list/pago-list.component';
 import { PagosListComponent } from './pagos-list/pagos-list.component';
 import { EstudiantesListComponent } from './estudiantes-list/estudiantes-list.component';
 import { ViajesListComponent } from './viajes-list/viajes-list.component';
@@ -43,8 +41,6 @@ import { FormsModule } from '@angular/forms'
     EstudianteDetailsComponent,
     ClaseDetailsComponent,
     ClasesListComponent,
-    EstudianteListComponent,
-    PagoListComponent,
     PagosListComponent,
     EstudiantesListComponent,
     ViajesListComponent,

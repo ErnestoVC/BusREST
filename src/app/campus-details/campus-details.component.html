@@ -1,3 +1,8 @@
-<p>
-  campus-details works!
-</p>
+<div *ngIf="campus">
+    <div>
+        <label>Nombre:</label>{{campus.Nombre}}
+      </div>
+
+      <span (click)='deleteCampus()'>Eliminar</span>
+</div>
+  

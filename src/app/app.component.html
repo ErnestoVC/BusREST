@@ -1,10 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
-  <h1>({title})</h1>
+  <h1>{{title}}</h1>
   <nav>
-    <a router-link ="list" class="btn btn-list-campus active"></a>
-    <a router-link ="new" class="btn btn-new-campus active"></a>
-    <a router-link ="delete" class="btn btn-delete-campus active"></a>
+    <a routerLink ="list" class="btn btn-primary active">Lista de Campus</a>
+    <a routerLink ="new" class="btn btn-primary active">Registro de Campus</a>
+    <a routerLink ="delete" class="btn btn-primary active">Eliminar Campus</a>
   </nav>
+  <router-outlet></router-outlet>
 </div>
 
