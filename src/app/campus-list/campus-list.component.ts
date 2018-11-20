@@ -10,7 +10,7 @@ import { Campus } from '../model/campus';
 })
 export class CampusListComponent implements OnInit {
 
-  campuses: Observable<Campus[]>
+  campuses: Campus[];
 
   constructor(private campusService: CampusService) { }
 
@@ -19,7 +19,14 @@ export class CampusListComponent implements OnInit {
   }
 
   reloadData(){
-    this.campuses=this.campusService.getCampusList();
+    this.campusService.getCampusList().subscribe(campuses=> {
+      this.campuses=campuses;
+      console.log(this.campuses);
+    });
+    /*fetch('http://localhost:8080/campus').then(data => {
+      console.log(data.json());
+    });
+    console.log(this.campuses);*/
   }
 
 }

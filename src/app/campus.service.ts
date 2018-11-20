@@ -25,7 +25,8 @@ private baseUrl='http://localhost:8080/campus';
   }
 
   deleteCampus(id:number):Observable<any>{
-    return this.http.delete(`${this.baseUrl}/${id}`, {responseType:'text'});
+    return this.http.delete(`${this.baseUrl}/${id}`,
+                             {responseType:'text'});
   }
 
   getCampusList():Observable<any>{
