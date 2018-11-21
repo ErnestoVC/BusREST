@@ -1,3 +1,11 @@
-<p>
-  ruta-details works!
-</p>
+<div *ngIf="ruta">
+  <div>
+      <h3>Nombre: {{ruta.nombre}}</h3>
+      <div *ngFor="let paradero of ruta.paraderos">
+        <div>
+          Nombre: {{paradero.name}}<br>
+          Referencia: {{paradero.referencia}}
+        </div>
+      </div>      
+  </div>
+</div>

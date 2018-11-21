@@ -1,3 +1,5 @@
-<p>
-  rutas-list works!
-</p>
+<h1>Lista de rutas</h1>
+
+<div *ngFor="let ruta of rutas">
+  <app-ruta-details [ruta]='ruta'></app-ruta-details>
+</div>

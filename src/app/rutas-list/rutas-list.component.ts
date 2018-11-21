@@ -10,8 +10,18 @@ import { RutaService } from '../ruta.service';
 })
 export class RutasListComponent implements OnInit {
 
-  constructor() { }
+  rutas: Ruta[];
+
+  constructor(private rutasService: RutaService) { }
 
   ngOnInit() {
+    this.cargaRutas();
   }
+  cargaRutas() {
+    this.rutasService.getRutas().subscribe(rutas => {
+      this.rutas = rutas;
+      console.log(rutas);
+    });
+  }
+  
 }

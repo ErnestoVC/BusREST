@@ -7,7 +7,7 @@ export class Ruta {
     
     id:number;
     nombre:string;
-    campus_salida: Campus
-    campus_llegada: Campus
+    campus_salida: Campus;
+    campus_llegada: Campus;
     
 }
