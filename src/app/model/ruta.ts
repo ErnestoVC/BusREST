@@ -1,15 +1,13 @@
+import { CampusListComponent } from './../campus-list/campus-list.component';
 import { CampusService } from './../campus.service';
 import { Campus } from "./campus";
+import { ViewChild } from '@angular/core';
 
 export class Ruta {
+    
     id:number;
     nombre:string;
-    campus_salida: {
-        id: number
-        nombre_salida: String
-    }
-    campus_llegada: {
-        id:number
-        nombre_llegada: string
-    }
+    campus_salida: Campus
+    campus_llegada: Campus
+    
 }

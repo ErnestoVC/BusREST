@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { Viaje } from './model/viaje';
 import { Component } from '@angular/core';
 
 @Component({
