@@ -15,4 +15,8 @@ export class ViajeService {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
+  getViajeList():Observable<any>{
+    return this.http.get(`${this.baseUrl}`);
+  }
+
 }

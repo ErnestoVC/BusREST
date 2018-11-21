@@ -1,3 +1,5 @@
+import { ViajeService } from './../viaje.service';
+import { Viaje } from './../model/viaje';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViajesListComponent implements OnInit {
 
-  constructor() { }
+  viajes: Viaje[];
+
+  constructor(private viajeService: ViajeService) { }
 
   ngOnInit() {
+  }
+
+  reloadData(){
+    this.viajeService.getViajeList().subscribe(viajes=>{
+      this.viajes=viajes;
+      console.log(this.viajes);
+    })
   }
 
 }

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RutaService {
 
-  private baseUrl = 'http://localhost:8090/rutas';
+  private baseUrl = 'http://localhost:8080/rutas';
 
   constructor(private http:HttpClient) { }
 
