@@ -1,11 +1,15 @@
+<li>
 <div *ngIf="ruta">
   <div>
       <h3>Nombre: {{ruta.nombre}}</h3>
+      <ul>
       <div *ngFor="let paradero of ruta.paraderos">
-        <div>
+        <li>
           Nombre: {{paradero.name}}<br>
           Referencia: {{paradero.referencia}}
-        </div>
-      </div>      
+        </li>
+      </div>
+      </ul>
   </div>
 </div>
+</li>

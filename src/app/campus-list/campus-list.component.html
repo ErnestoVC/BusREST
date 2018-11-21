@@ -1,5 +1,7 @@
-<h1>Lista de Campus</h1>
+<h1 class="title">Lista de campus</h1>
 
-<div *ngFor="let campus of campuses">
-  <app-campus-details [campus]='campus'></app-campus-details>
-</div>
+<ul>
+  <div *ngFor="let campus of campuses">
+    <app-campus-details [campus]='campus'></app-campus-details>
+  </div>
+</ul>

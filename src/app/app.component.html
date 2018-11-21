@@ -1,11 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <h1>{{title}}</h1>
+<div id="container">
+  <div>
+    <img src="https://blogs.upc.edu.pe/sites/default/files/styles/img_blog_thumbail_lista/public/upc/blogs/lista_blogs/blog_de_administracion_y_marketing/blog_post/2017/julio/blogpost_imagen/logo-upc.jpg" alt="Logo de la UPC" style="display: inline-block;" width="78px" height="64px">
+    <h1 style="display: inline-block;" class="title">{{title}}</h1>
+  </div>
   <nav>
-    <a routerLink ="list" class="btn btn-primary active">Lista de Campus</a>
-    <a routerLink ="new" class="btn btn-primary active">Registro de Campus</a>
-    <a routerLink ="delete" class="btn btn-primary active">Eliminar Campus</a>
-    <a routerLink ="rutas" class="btn btn-primary active">Listar rutas</a>
+    <ul>
+      <li><a routerLink ="list" class="btn btn-primary active">Lista de campus</a></li>
+      <!--<a routerLink ="new" class="btn btn-primary active">Registro de Campus</a>
+      <a routerLink ="delete" class="btn btn-primary active">Eliminar Campus</a>-->
+      <li><a routerLink ="rutas" class="btn btn-primary active">Listar rutas</a></li>
+  </ul>
   </nav>
   <router-outlet></router-outlet>
 </div>

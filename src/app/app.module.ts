@@ -27,7 +27,8 @@ import { CampusDetailsComponent } from './campus-details/campus-details.componen
 import { CampusListComponent } from './campus-list/campus-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { FormsModule } from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

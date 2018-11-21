@@ -1,5 +1,6 @@
-<h1>Lista de rutas</h1>
-
-<div *ngFor="let ruta of rutas">
-  <app-ruta-details [ruta]='ruta'></app-ruta-details>
-</div>
+<h1 class="title">Lista de rutas</h1>
+<ul>
+  <div *ngFor="let ruta of rutas">
+    <app-ruta-details [ruta]='ruta'></app-ruta-details>
+  </div>
+</ul>

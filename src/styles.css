@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+html,
+body
+{
+    background-image: url('https://www.upc.edu.pe/sites/default/files/styles/upc_princ_block_basic/public/upc/bloques/bloque/bloque_titulo_e_imagen_de_fondo/es/bloque_imagen/relleno-cuadro-1_10.jpg');
+    font-family: 'Heebo', sans-serif;
+}
+
+.title
+{
+    color: #F22424;
+}
